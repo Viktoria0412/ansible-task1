@@ -1,4 +1,4 @@
-- hosts: web
+- hosts: ALL
   tasks:
   - name: Install Apache
     yum:
@@ -92,3 +92,5 @@
     service:
        name: httpd
        state: restarted
+
+
